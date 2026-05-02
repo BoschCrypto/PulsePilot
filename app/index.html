@@ -1,1 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulsePilot - Schedule + Market + AI Voice</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>PulsePilot</h1>
+        <p>Track your schedule, read market headlines, and talk to your AI copilot.</p>
+      </header>
 
+      <section class="card">
+        <h2>Schedule</h2>
+        <form id="schedule-form">
+          <input id="event-title" placeholder="Event title" required />
+          <input id="event-time" type="datetime-local" required />
+          <button type="submit">Add Event</button>
+        </form>
+        <ul id="schedule-list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Market News</h2>
+        <div class="controls">
+          <input id="ticker-input" placeholder="Ticker (ex: AAPL)" value="AAPL" />
+          <button id="news-button">Load News</button>
+        </div>
+        <ul id="news-list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Voice AI Assistant</h2>
+        <div class="controls">
+          <button id="listen-button">🎤 Start Listening</button>
+          <button id="stop-button">⏹ Stop</button>
+        </div>
+        <p><strong>You said:</strong> <span id="heard-text">-</span></p>
+        <p><strong>AI:</strong> <span id="ai-text">Ask me about your schedule or market headlines.</span></p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
