@@ -1,1 +1,51 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
 
+body {
+  margin: 0;
+  background: #0b1020;
+  color: #f7fbff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #161d32;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls,
+form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+input,
+button {
+  border-radius: 8px;
+  border: 1px solid #364266;
+  padding: 0.6rem 0.7rem;
+  background: #1d2642;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+li {
+  margin: 0.5rem 0;
+}
